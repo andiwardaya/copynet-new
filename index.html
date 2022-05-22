@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>COPYNET</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="css/all.min.css">
+	<link rel="stylesheet" href="css/fontawesome.min.css">
+</head>
+<body>
+
+<section class="header">
+
+<!-- -----BERANDA------ -->
+<nav>
+	<div class="logo">
+		<h3>COPYNET</h3>
+	</div>
+
+	<ul id="navLinks">
+		<i class="fas fa-times" onclick="hideMenu()" ></i>
+		<li><a href="#produk">PRODUK</a></li>
+		<li><a href="#games">GAMES</a></li>
+		<li><a href="#layanan">LAYANAN</a></li>
+		<li><a href="#tentang-kami">TENTANG KAMI</a></li>
+		<li><a href="https://api.whatsapp.com/send?phone=6282199994441" target="_blank">KONTAK</a></li>
+	</ul>
+	<i class="fas fa-bars" onclick="showMenu()"></i>
+</nav>
+
+<div class="text-box">
+	<h2>GAMING & FOTOCOPY</h2>
+	<p>Copynet menyediakan layanan fotocopy, editing, print, alat tulis, pulsa, snacks, warnet gaming (free-fire, point blank, mobile legends) dan voucher wifi</p>
+	<a href="#produk" class="btn">Klik disini untuk lebih lanjut</a>
+</div>
+
+</section>
+<!-- ----- AKHIR BERANDA------ -->
+
+
+
+
+
+
+<!-- ---PRODUK--- -->
+<section class="produk">
+
+	<div class="header-produk">
+	  <h2 id="produk">Produk yang Kami Tawarkan</h2>
+	  <p>Lorem, ipsum dolor sit amet consectetur adipisicing, elit. Non, accusantium. Lorem ipsum dolor sit <br>amet consectetur adipisicing elit. Quibusdam, eum.</p>
+	</div>
+
+	<div class="kotak-produk">
+	  	<div class="kotak">
+	  		<h2>Alat Tulis</h2>
+	  		<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, consequuntur?Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, consequuntur?Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, consequuntur?</p>
+	  	</div>
+
+	  	<div class="kotak">
+	  		<h2>Rokok & Snack</h2>
+	  		<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, consequuntur?Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, consequuntur?Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, consequuntur?</p>
+	  	</div>
+
+	  	<div class="kotak">
+	  		<h2>Voucher Wifi</h2>
+	  		<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, consequuntur?Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, consequuntur?Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, consequuntur?</p>
+	  	</div>
+	</div>
+
+</section>
+ <!-- ---AKHIR DARI PRODUK---- -->
+
+
+
+
+
+<!-- ----AWAL GAMES----- -->
+
+<section class="games">
+	<div class="header-games">
+		<img class="nox" src="img/Nox.png" id="games">
+		<h2>Nox Android Emulator</h2>
+		<p>
+		Mainkan games terpopuler android menggunakan PC di COPYNET
+		</p>
+	</div>
+
+	<div class="column-games">	
+		<img src="img/freefire.jpg" class="freefire">
+		<img src="img/ml.jpg" class="ml">
+		<img src="img/pb2.jpg" class="pb">
+	</div>
+
+</section>
+
+<!--------AKHIR GAMES---------->
+
+
+
+<!-- ======LAYANAN======= -->
+
+<section class="layanan">
+
+	<div class="header-layanan">
+		<h2 id="layanan">Layanan Copynet</h2>
+		<p>Berikut merupakan layanan yang bisa kalian dapatkan di COPYNET
+		</p>
+	</div>	
+	<div class="kolom-layanan">
+		<div class="jenis-layanan">
+			<img src="img/copynet3.jpg">
+			<h3>PC GAMING</h3>
+			<p>Copynet menyediakan PC Gaming yang dapat memainkan games Androind ataupun Windows dengan harga paket yang terjangkau</p>
+		</div>
+
+		<div class="jenis-layanan">
+			<img src="img/fotocopy.jpg">
+			<h3>FOTOCOPY</h3>
+			<p>COPYNET melayani fotocopy segala jenis dokumentasi, pembuatan undangan, editing foto, mengisi lagu mp3 dan lain sebagainya.
+			</p>
+		</div>
+
+		<div class="jenis-layanan">
+			<img src="img/wifi.jpg">
+			<h3>WIFI</h3>
+			<p>Copynet menyediakan Wifi dengan kecepatan up to 20 Mbps yang akan mumpuni untuk memainkan game online seperti Freefire, Pubg Mobile ataupun Mobile Legends.
+			</p>
+		</div>
+	</div>
+
+</section>
+
+<!-- =======AKHIR LAYANAN========= -->
+
+
+
+
+<!-- =======TENTANG KAMI========= -->
+
+<section class="tentang-kami">
+	<h2 id="tentang-kami">TENTANG COPYNET</h2>
+	<p>Copynet merupakan toko fotocopy melayani editing dan printing dokumentasi, selain itu copynet menyediakan pc gaming dan voucher wi-fi dengan harga yang terjangkau.</p> <br>
+	<a href="https://api.whatsapp.com/send?phone=6282199994441" target="_blank">KONTAK WHATSAPP</a>
+</section>
+
+<!-- =========AKHIR TENTANG KAMI========== -->
+
+
+
+
+
+
+
+<!-- ====FOOTER===== -->
+
+<section class="footer">
+	<p>Copyright All Right Reserved - Alexander Wardaya</p>
+</section>
+
+
+<!-- ====AKHIR FOOTER===== -->
+
+
+
+
+
+
+
+<!-- ----- javascript toggle------ -->
+<script>
+	
+	var navLinks = document.getElementById("navLinks")
+
+	function showMenu(){
+		navLinks.style.left = "20%";
+	}
+
+	function hideMenu(){
+		navLinks.style.left = "100%";
+	}
+
+</script>
+
+
+</body>
+</html>

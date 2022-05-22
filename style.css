@@ -1,0 +1,516 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+/* FONT */
+@font-face {
+    font-family: 'Poppins Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Poppins Regular'), url('Poppins-Regular.woff') format('woff');
+    }
+
+@font-face {
+    font-family: 'Poppins Medium';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Poppins Medium'), url('Poppins-Medium.woff') format('woff');
+    }
+
+@font-face {
+    font-family: 'Poppins Light';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Poppins Light'), url('Poppins-Light.woff') format('woff');
+    }
+ /* AKHIR FONT */
+
+body{
+	font-family: 'Poppins Regular';
+	
+}
+
+
+
+.header{
+	width: 100%;
+	min-height: 100vh;
+	background-image: url(img/pc-edit.jpg);
+	background-size: cover;
+	background-position: center;
+	position: relative;
+	color: white;
+}
+
+/* AWAL NAVIGASI */
+
+nav{
+	width: 100%;
+	height: 80px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.logo h3 {
+	font-family: 'Poppins Medium';
+	font-size: 2em;
+	padding-left: 70px;
+}
+
+nav ul {
+	display: flex;
+	list-style: none;
+	padding-right: 30px;
+	margin-top: 5px;
+}
+
+nav a {
+	text-decoration: none;
+	color: white;
+	padding: 3px 10px;
+	font-weight: bold;
+	font-size: 17px;
+/*	background-color: lightblue;*/
+	margin: 0px 5px;
+	border-radius: 7px;
+	/*border: 2px solid white;*/
+}
+
+nav .logo:hover{
+	color: rgba(255,0,0);
+	letter-spacing: 5px;
+	transition: 0.4s;
+	font-size: 18px;
+
+
+}
+
+nav a:hover {
+	background-color: rgba(255,0,0,0.6);
+	transition: 0.4s;
+	font-size: 18px;
+}
+/* AKHIR NAVIGASI */
+ 
+
+ /* Textbox */
+.text-box {
+	width: 100%;
+	position: absolute;
+	top:50%;
+	left: 50%;
+	text-align: center;
+	transform: translate(-50%,-50%);
+}
+
+.text-box h2 {
+	font-size: 60px;
+	font-weight: bold;
+	font-family: 'Poppins Medium';
+
+}
+
+.text-box p{
+	background-color:rgba(255,0,0,0.4);
+	border-radius: 5px;
+	padding: 3px 3px;
+	font-size: 15px;
+}
+
+.text-box .btn {
+	display: inline-block;
+	text-decoration: none;
+	color: white;
+	padding: 5px 10px;
+	border: 2px solid white;
+	margin: 50px 0px;
+	border-radius: 5px;
+	transition: .5s;
+}
+
+.text-box .btn:hover {
+	background-color: rgba(255,0,0,0.6);
+	border: 2px solid rgba(255,0,0,0.6);
+}
+
+/* Akhir Textbox */
+
+
+/* hamburger */
+
+nav .fas {
+	display: none;
+
+}
+
+/* akhir hamburger */
+
+
+
+/*RESPONSIVE*/
+
+@media (max-width: 850px) {
+	nav a {
+		font-size: 12px;
+	}
+	nav a:hover {
+		font-size: 14px;
+}
+	nav ul {
+		padding-right: 20px;
+}
+	.logo h3 {
+		font-size: 1.5em;
+		padding-left: 50px;
+}
+	.text-box h2 {
+	font-size: 40px;
+}
+
+	.text-box p{
+	font-size: 12px;
+}
+	.text-box .btn {
+		font-size: 14px;
+	}
+
+}
+
+@media (max-width: 650px) {
+	.header {
+		overflow: hidden;
+	}
+	nav ul {
+	transition: all 1s;
+	flex-direction: column;
+	justify-content: space-evenly;
+	background-color: black;
+	position: absolute;
+	top: 0;
+	right: 100%;
+	width: 80%;
+	height: 100vh;
+	align-items: center;
+	margin-top: 0px;
+	z-index: 2;
+	
+}
+
+.logo h3 {
+	padding-left: 30px;
+}
+
+	.text-box h2 {
+	font-size: 35px;
+}
+
+	.text-box p{
+	font-size: 12px;
+}
+	.text-box .btn {
+		font-size: 10px;
+	}
+
+	nav .fas {
+		display: block;
+		cursor: pointer;
+		font-size: 22px;
+		color: white;
+		
+	}
+
+	nav .fas.fa-bars {
+		margin-right: 10px;
+		margin-top: 5px;
+
+	}
+
+	nav .fas.fa-times {
+		font-size: 25px;
+		position: absolute;
+		top: 2%;
+		left: 5%;
+	}
+}
+
+/*AKHIR DARI RESPONSIVE*/
+
+
+/*----PRODUK-----*/
+
+.header-produk {
+	width: 80%;
+	margin: 60px auto;
+	text-align: center;
+}
+
+.header-produk h2{
+	font-size: 2.2em;
+	font-family: 'Poppins Medium';
+}
+
+.header-produk p {
+	font-size: 14px;
+}
+
+.kotak-produk {
+	display: flex;
+	margin-bottom: 80px;
+	justify-content: space-between;
+	padding: 0px 30px;
+}
+
+.kotak-produk .kotak {
+	width: 400px;
+	padding: 25px 30px;
+	border-radius: 5px;
+	margin: 0px 20px;
+	background-color: rgba(255,0,0,1);
+	color:#dddddd;
+}
+.kotak-produk .kotak p {
+	font-size: 14px;
+
+}
+.kotak-produk .kotak h2 {
+	text-align: center;
+	margin-bottom: 20px;
+	font-family: 'Poppins Medium';
+	color: white;
+	font-size:20px;
+}
+
+.kotak-produk .kotak:hover{
+	box-shadow: 0px 0px 5px 2px rgba(0,0,0,0.5);
+	transition:.3s;
+}
+
+@media (max-width: 700px) {
+	.kotak-produk {
+	display: block;
+}
+	.kotak-produk .kotak {
+	margin: 15px auto;
+	width: 90%;
+	
+}
+}
+
+/*----AKHIR DARI PRODUK----*/
+
+
+
+
+
+
+
+/*------AWAL GAMES-----*/
+
+.header-games img {
+	width: 130px;
+	height: 130px;
+/*	margin-top:15px;*/
+}
+.header-games {
+	width: 80%;
+	margin: auto;
+	text-align: center;
+}
+
+.header-games h2{
+	font-size: 2em;
+	font-family: 'Poppins Medium';
+}
+.header-games p{
+	font-size: 14px;
+}
+
+.column-games {
+	margin: 35px auto;
+	width: 100%; 
+	justify-content: ;
+	display: flex;
+	justify-content: space-evenly;
+}
+
+.column-games img {
+	width: 300px;
+	height: 500px;
+	border-radius: 20px;
+	margin: 0px 15px;
+}
+
+.column-games img:hover{
+	filter: brightness(50%);
+	transition: 0.5s;
+}
+
+
+
+
+/*==========RESPONSIVE=========*/
+@media (max-width: 800px) {
+	.column-games {
+	display: block;
+	
+}
+.column-games img {
+	display: block;
+	margin: 15px auto;
+	width: 250px;
+	height: 400px;
+	}
+}
+
+/*------AKHIR GAMES-----*/
+
+
+
+
+/*=========LAYANAN==========*/
+
+.layanan{
+	width: 90%;
+	text-align: center;
+	margin:30px auto;
+	padding-top: 25px;
+}
+
+.header-layanan {
+	margin: top 15px;
+	margin-bottom: 10px;
+	padding-top: 15px;
+}
+
+.header-layanan h2{
+	font-size: 2em;
+	font-family: 'Poppins Medium';
+}
+
+.header-layanan p {
+	font-size: 14px;
+}
+
+.kolom-layanan{
+	display: flex;
+}
+
+.jenis-layanan {
+	flex-basis: 50%;
+	border-radius: 10px;
+	margin:25px 20px;
+	text-align: left;
+}
+
+.jenis-layanan h3{
+	text-align: center;
+}
+
+.jenis-layanan p{
+	font-size: 14px;
+	text-align: justify;
+}
+
+.jenis-layanan img {
+	width: 100%;
+	height:70%;
+	border-radius: 10px;
+}
+
+.jenis-layanan img:hover{
+	box-shadow: 0px 0px 5px 2px rgba(0,0,0,0.5);
+	transition: 0.5s;
+}
+
+/*===RESPONSIVE====*/
+
+@media(max-width: 768px) {
+	.kolom-layanan{
+	display:block;
+}
+.jenis-layanan {
+	margin: 70px auto;
+}
+	.jenis-layanan p{
+	font-size: 13px;
+}
+}
+/*=======AKHIR LAYANAN======*/
+
+
+
+
+
+/*=====TENTANG KAMI======*/
+
+.tentang-kami{
+	width: 95%;
+	background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url(img/copynet4.jpg);
+	background-size: cover;
+	background-position: center;
+	text-align: left;
+	margin:20px auto;
+	padding: 100px;
+	border-radius: 20px;
+	color: white;
+	text-decoration: none;
+}
+
+.tentang-kami a{
+	margin-top:10px;
+	border: 2px solid white;
+	border-radius: 9px;
+	padding: 6px;
+	text-decoration: none;
+	color: white;
+	font-weight: bold;
+}
+
+
+.tentang-kami a:hover{
+	background-color: rgba(164,164,164,0.6);
+	transition: 0.4s;
+}
+
+
+/*=====RESPONSIVE======*/
+
+@media (max-width: 768px) {
+	.tentang-kami h2, p, a{
+		font-size: 12px;
+	}
+}
+
+/*=====AKHIR TENTANG KAMI======*/
+
+
+
+
+
+
+
+/*====FOOTER====*/
+
+.footer{
+	width: 100%;
+	height: 45px;
+	background-color: black;
+	color: white;
+	text-align: center;
+	line-height: 45px;
+	font-size: 10px;
+}
+
+@media(max-width: 768px) {
+	.footer p{
+		font-size: 8px;
+	}
+}
+
+
+
+
+/*=====AKHIR FOOTER=====*/
